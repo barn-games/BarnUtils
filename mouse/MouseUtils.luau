@@ -8,7 +8,6 @@ local MouseUtils = {}
 	returns the workspace raycast result from the mouse's current position
 	
 	Q: why this over mouse.Hit?
-	
 	A: because this gives you more filtering options by letting you pass raycastparams.
 ]=]
 function MouseUtils.RaycastFromMouse(distance: number, raycastParams: RaycastParams?): RaycastResult
