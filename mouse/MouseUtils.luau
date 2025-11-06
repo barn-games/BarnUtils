@@ -11,7 +11,6 @@ local MouseUtils = {}
 	
 	A: because this gives you more filtering options by letting you pass raycastparams.
 ]=]
-
 function MouseUtils.RaycastFromMouse(distance: number, raycastParams: RaycastParams?): RaycastResult
 	local mouseLocation = UserInputService:GetMouseLocation()
 	local ray = workspace.CurrentCamera:ViewportPointToRay(mouseLocation.X, mouseLocation.Y)
