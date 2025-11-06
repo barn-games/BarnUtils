@@ -14,7 +14,6 @@ function MouseUtils.RaycastFromMouse(distance: number, raycastParams: RaycastPar
 	local mouseLocation = UserInputService:GetMouseLocation()
 	local ray = workspace.CurrentCamera:ViewportPointToRay(mouseLocation.X, mouseLocation.Y)
 	local raycastResult = workspace:Raycast(ray.Origin, ray.Direction * distance, raycastParams)
-	
 	return raycastResult
 end
 
